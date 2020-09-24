@@ -1,7 +1,7 @@
 require 'pry'
 
 def my_all?(collection)
-  i = 0 
+
   while i < collection.length 
   yield(collection[i] )
   i += 1 
@@ -9,3 +9,5 @@ def my_all?(collection)
 end 
 
 
+my_all?([1,2,3]) {1 < 2}
+end 
